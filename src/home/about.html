@@ -1,0 +1,33 @@
+<style>
+  main {
+    @include fullscreen;
+    height: 50vh;
+    @include flex(column);
+    @include flex-center;
+
+    $radius: 30px;
+    align-items: center;
+    border-top-right-radius: $radius;
+    border-top-left-radius: $radius;
+    text-align: center;
+  }
+  h1 {
+    width: 7em;
+    font-weight: 800;
+    border-bottom: 4px solid $red;
+  }
+  p {
+    font-weight: 300;
+  }
+</style>
+
+<main>
+  <h1>ABOUT US</h1>
+  <p>
+    Established as a private company at Hooghly,
+    <span> HOOGHLY AGRO PRODUCTS PRIVATE LIMITED </span> is known as the
+    foremost manufacturer of a high-quality range of Crude Rice Bran Oil, Rice
+    Bran Offered Crude Rice Bran Oil, Rice Bran are well-known for the features
+    like long working life, high functionality, and low maintenance.
+  </p>
+</main>

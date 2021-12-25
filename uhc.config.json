@@ -4,12 +4,12 @@
   "template": "template.html",
   "css": {
     "autoprefix": true,
-    "prefix": "@import \"./mixins.scss\";",
+    "prefix": "@import \"../mixins.scss\";",
     "sass": true 
   },
   "vars": {
   },
   "routes": {
-    "/": "home.html"
+    "/": "home/index.html"
   }
 }

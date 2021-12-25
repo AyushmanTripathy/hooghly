@@ -1,10 +1,16 @@
-$bg: #202124;
-$sec: #bbb;
-$hl: #047dffcb;
+$bg-green: var(--green);
+$bg-yellow: var(--yellow);
+$light: var(--light);
+$red: var(--red);
 
 @mixin fullscreen {
   height: 100vh;
   width: 100vw;
+}
+
+@mixin cover-image($src) {
+  background-image: url($src);
+  background-size: cover;
 }
 
 @mixin absolute {
@@ -34,9 +40,10 @@ $hl: #047dffcb;
   margin: 0;
 }
 
-@mixin cursive {
-  font-family: "Caveat", cursive;
+@mixin light {
+  font-weight: 300;
 }
-@mixin sans {
-  font-family: "Open Sans Condensed", sans-serif;
+
+@mixin bold {
+  font-weight: 600;
 }

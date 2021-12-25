@@ -1,0 +1,17 @@
+<style>
+  main {
+    @include absolute;
+    @include fullscreen;
+    @include flex(column);
+    z-index: 2;
+  }
+  section {
+    @include fullscreen;
+  }
+</style>
+
+<main>
+  <import path="./home" />
+  <import path="./about" />
+  <import path="./products" />
+</main>
