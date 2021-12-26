@@ -1,16 +1,16 @@
 <style>
   main {
-    /*@include fixed;*/
-    @include flex(column);
-    @include flex-center;
     @include fullscreen;
-    height: 80vh;
-
-    @include cover-image("./rice_feild.png");
-    z-index: 0;
+  }
+  div {
+    @include relative(15vh, 10vw);
+    width: 80vw;
   }
 </style>
 
-<main>
-  <img src="./name.jpeg" alt="company name">
+<main id="home">
+  <div>
+    <h1>Hooghly Agro Products</h1>
+    <h3>Pvt. Ltd.</h3>
+  </div>
 </main>

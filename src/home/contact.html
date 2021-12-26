@@ -1,0 +1,106 @@
+<style>
+  main {
+    @include fullscreen;
+    @include flex(row);
+    @include flex-center;
+  }
+  $height: 90vh;
+  section {
+    @include flex(row);
+
+    max-width: 800px;
+    width: 80vw;
+    height: $height;
+    border: 4px solid $dark;
+  }
+  textarea,
+  input {
+    width: 80%;
+
+    border: none;
+    border-bottom: 1px solid $dark;
+    padding: 4px;
+    outline: none;
+
+    font-size: 16px;
+    @include font;
+  }
+  textarea {
+    height: 40%;
+    border: 1px solid $dark;
+    font-size: 13px;
+  }
+  button {
+    width: 40%;
+  }
+  .left {
+    $width: 30vw;
+    color: $light;
+    width: $width;
+    height: $height;
+    background-color: $dark;
+
+    padding-left: calc($width / 10);
+  }
+  .right {
+    $width: 50vw;
+
+    @include flex(column);
+    justify-content: space-around;
+    padding-left: calc($width / 10);
+
+    width: $width;
+    height: $height;
+    text-align: left;
+  }
+
+  @media screen and (max-width: $mobile) {
+    main {
+      height: fit-content;
+    }
+    section {
+      @include section(130vh, 100vw);
+      flex-direction: column;
+      border: none;
+    }
+    .left {
+      @include section(fit-content, 100vw);
+      text-align: center;
+      padding: 0px;
+    }
+    .right {
+      align-items: center;
+      padding: 0px;
+      width: 100vw;
+      text-align: center;
+    }
+  }
+</style>
+
+<main id="contact">
+  <section>
+    <div class="left">
+      <h2>
+        Pay us,<br />
+        a visit!
+      </h2>
+      <p>
+        Beraberi, Hooghly,<br />
+        West Bengal
+      </p>
+      <h2>
+        Wanna Talk?, <br />
+        give us a call!
+      </h2>
+      <p>9734485347, 9434025940</p>
+    </div>
+    <div class="right">
+      <h2>Get in touch</h2>
+      <input type="text" placeholder="Brad pit" />
+      <input type="text" placeholder="Exmaple@mail.com" />
+      <input type="text" placeholder="Subject" />
+      <textarea cols="30" rows="10" placeholder="your message"></textarea>
+      <button class="hover" type="submit">Send Email</button>
+    </div>
+  </section>
+</main>

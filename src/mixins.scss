@@ -1,7 +1,23 @@
-$bg-green: var(--green);
-$bg-yellow: var(--yellow);
 $light: var(--light);
-$red: var(--red);
+$dark: var(--dark);
+$mobile: 680px;
+
+@mixin section($height,$width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin relative($top,$left) {
+  position: relative;
+  top: $top;
+  left: $left;
+}
+
+@mixin grid($row, $column) {
+  display: grid;
+  grid-template-columns: $column;
+  grid-template-rows: $row;
+}
 
 @mixin fullscreen {
   height: 100vh;
@@ -23,6 +39,10 @@ $red: var(--red);
   position: fixed;
   top: 0;
   left: 0;
+}
+
+@mixin font {
+  font-family: "Montserrat", sans-serif;
 }
 
 @mixin flex($dir) {

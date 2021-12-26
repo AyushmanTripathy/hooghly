@@ -1,0 +1,100 @@
+<style>
+  $height: 8vh;
+  main {
+    @include fixed;
+    @include grid(1fr, 1fr 5fr);
+
+    $margin: 4vw;
+    width: calc(100vw - $margin * 2);
+    height: $height;
+
+    padding-right: $margin;
+    padding-left: $margin;
+    border-bottom: 1px solid #000;
+    background-color: $light;
+    z-index: 1;
+  }
+  div {
+    @include flex(row);
+    justify-content: right;
+    align-items: center;
+    column-gap: 1vw;
+  }
+  a {
+    padding: 5px;
+    border-radius: 5px;
+  }
+  img {
+    height: calc($height - 1vh);
+    aspect-ratio: 3/1;
+  }
+  i {
+    display: none;
+    position: fixed;
+    top: 2vh;
+    right: 2vw;
+    display: none;
+    z-index: 2;
+    transition: all 1s;
+  }
+  @media screen and (max-width: $mobile) {
+    div {
+      display: none;
+    }
+    i {
+      display: block;
+    }
+  }
+  button:hover {
+    i {
+      color: $light;
+      background-color: $dark;
+    }
+  }
+  .open {
+    @include flex(column);
+    @include flex-center;
+    justify-content: space-around;
+
+    $height: 50vh;
+    $width: 50vw;
+
+    position: fixed;
+    top: 7px;
+    right: 7px;
+
+    height: $height;
+    width: $width;
+
+    border: 2px solid $dark;
+    background-color: $light;
+    z-index: 3;
+  }
+</style>
+
+<button onclick="showMenu()">
+  <i class="material-icons-outlined"> menu </i>
+</button>
+<main>
+  <img src="name.jpeg" alt="company logo" />
+  <div id="nav">
+    <a onclick="hideMenu()" class="hover" href="#home">Home</a>
+    <a onclick="hideMenu()" class="hover" href="#about">About</a>
+    <a onclick="hideMenu()" class="hover" href="#products">Products</a>
+    <a onclick="hideMenu()" class="hover" href="#contact">Contact</a>
+  </div>
+</main>
+
+<script defer>
+  const nav = document.querySelector("#nav");
+  const icon = document.querySelector("i");
+
+  function showMenu() {
+    nav.classList.add("open");
+    icon.style.display = "none";
+  }
+  function hideMenu() {
+    nav.classList.remove("open");
+    icon.style.display = "flex";
+  }
+</script>

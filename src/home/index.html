@@ -1,17 +1,20 @@
 <style>
   main {
     @include absolute;
-    @include fullscreen;
     @include flex(column);
-    z-index: 2;
-  }
-  section {
-    @include fullscreen;
+    @include flex-center;
+
+    width: 100vw;
+    height: fit-content;
+    background-color: $light;
   }
 </style>
 
+<import path="../navbar" />
 <main>
   <import path="./home" />
   <import path="./about" />
   <import path="./products" />
+  <import path="./contact" />
+  <import path="../footer" />
 </main>

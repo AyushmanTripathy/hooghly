@@ -1,29 +1,29 @@
 <style>
   main {
-    @include fullscreen;
-    height: 60vh;
     @include flex(column);
     @include flex-center;
-    @include cover-image("./wave2.svg");
+    @include section(70vh, 100vw);
+    background-color: $dark;
+    color: $light;
   }
+  $img-width: 250px;
   section {
-    width: 80vw;
+    @include section($img-width, 80vw);
     overflow: auto;
     white-space: nowrap;
     overflow-y: scroll;
-
-    border-radius: 30px;
   }
   div {
     display: inline-block;
     text-align: center;
   }
   img {
-    width: 250px;
+    width: $img-width;
     aspect-ratio: 3/2;
+    border-radius: 10px;
   }
-  h1 {
-    border-bottom: 1px solid $red;
+  .link {
+    color: $light;
   }
 </style>
 
@@ -32,19 +32,27 @@
   <section>
     <div>
       <h3>Rice Bran Oil</h3>
-      <img src="./product4.jpg" alt="Rice Bran Oil" />
-    </div>
-    <div>
-      <h3>De Oiled Rice Bran</h3>
-      <img src="./product2.png" alt="De Oiled Rice Bran" />
-    </div>
-    <div>
-      <h3>Rice Bran</h3>
-      <img src="./product3.jpg" alt="Rice Bran" />
+      <img src="./product4.jpg" alt="product image" />
     </div>
     <div>
       <h3>Crude Rice Bran Oil</h3>
-      <img src="./product1.png" alt="Crude Rice Bran Oil" />
+      <img src="./product6.jpg" alt="product image" />
+    </div>
+    <div>
+      <h3>De Oiled Rice Bran</h3>
+      <img src="./product2.png" alt="product image" />
+    </div>
+    <div>
+      <h3>Rice Bran</h3>
+      <img src="./product3.jpg" alt="product image" />
+    </div>
+    <div>
+      <h3>De Oiled Rice Bran</h3>
+      <img src="./product5.jpg" alt="product image" />
     </div>
   </section>
+  <p>
+    Interested?
+    <a class="link" href="#">let us know!</a>
+  </p>
 </main>
