@@ -20,9 +20,10 @@
     align-items: center;
     column-gap: 1vw;
   }
-  a {
-    padding: 5px;
+  button {
     border-radius: 5px;
+    height: fit-content;
+    border:none;
   }
   img {
     height: calc($height - 1vh);
@@ -78,10 +79,10 @@
 <main>
   <img src="name.jpeg" alt="company logo" />
   <div id="nav">
-    <a onclick="hideMenu()" class="hover" href="#home">Home</a>
-    <a onclick="hideMenu()" class="hover" href="#about">About</a>
-    <a onclick="hideMenu()" class="hover" href="#products">Products</a>
-    <a onclick="hideMenu()" class="hover" href="#contact">Contact</a>
+    <button onclick="hideMenu('home')" class="hover">Home</button>
+    <button onclick="hideMenu('about')" class="hover">About</button>
+    <button onclick="hideMenu('products')" class="hover">Products</button>
+    <button onclick="hideMenu('contact')" class="hover">Contact</button>
   </div>
 </main>
 
@@ -92,7 +93,13 @@
   function showMenu() {
     nav.classList.add("open");
   }
-  function hideMenu() {
+  function hideMenu(str) {
     nav.classList.remove("open");
+    scrollIntoVeiw(str);
+  }
+  function scrollIntoVeiw(id) {
+    document.querySelector("#" + id).scrollIntoView({
+      behavior: "smooth",
+    });
   }
 </script>
