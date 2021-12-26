@@ -7,11 +7,8 @@
     color: $light;
   }
   $img-width: 250px;
-  section {
+  marquee {
     @include section($img-width, 80vw);
-    overflow: auto;
-    white-space: nowrap;
-    overflow-y: scroll;
   }
   div {
     display: inline-block;
@@ -29,7 +26,15 @@
 
 <main id="products">
   <h1>Our Products</h1>
-  <section>
+  <marquee
+    behavior="scroll"
+    direction="left"
+    height="250"
+    scrollamount="6"
+    scrolldelay="10"
+    onmouseover="this.stop()"
+    onmouseout="this.start()"
+  >
     <div>
       <h3>Rice Bran Oil</h3>
       <img src="./product4.jpg" alt="product image" />
@@ -50,7 +55,7 @@
       <h3>De Oiled Rice Bran</h3>
       <img src="./product5.jpg" alt="product image" />
     </div>
-  </section>
+  </marquee>
   <p>
     Interested?
     <a class="link" href="#">let us know!</a>

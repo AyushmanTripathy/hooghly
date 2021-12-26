@@ -13,7 +13,7 @@
     />
     <link rel="icon" href="logo.png" />
     <link rel="stylesheet" href="global.css" />
-  <style>main.uhc4508 {
+  <style>main.uhc2 {
   position: fixed;
   top: 0;
   left: 0;
@@ -29,7 +29,7 @@
   z-index: 1;
 }
 
-div.uhc4508 {
+div.uhc2 {
   display: flex;
   flex-direction: row;
   justify-content: right;
@@ -38,17 +38,17 @@ div.uhc4508 {
        column-gap: 1vw;
 }
 
-a.uhc4508 {
+a.uhc2 {
   padding: 5px;
   border-radius: 5px;
 }
 
-img.uhc4508 {
+img.uhc2 {
   height: 7vh;
   aspect-ratio: 3/1;
 }
 
-i.uhc4508 {
+i.uhc2 {
   display: none;
   position: fixed;
   top: 2vh;
@@ -58,21 +58,12 @@ i.uhc4508 {
   transition: all 1s;
 }
 
-@media screen and (max-width: 680px) {
-  div.uhc4508 {
-    display: none;
-  }
-
-  i.uhc4508 {
-    display: block;
-  }
-}
-button:hover.uhc4508 i.uhc4508 {
+button:hover.uhc2 i.uhc2 {
   color: var(--light);
   background-color: var(--dark);
 }
 
-.open.uhc4508 {
+.open.uhc2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,19 +79,38 @@ button:hover.uhc4508 i.uhc4508 {
   z-index: 3;
 }
 
-main.uhc4509 {
+@media screen and (max-width: 680px) {
+  div.uhc2 {
+    display: none;
+  }
+
+  i.uhc2 {
+    display: block;
+  }
+}
+main.uhc3 {
   height: 100vh;
   width: 100vw;
+  background-image: url("./cover.jpg");
+  background-size: cover;
 }
 
-div.uhc4509 {
+div.uhc3 {
   position: relative;
   top: 15vh;
   left: 10vw;
   width: 80vw;
 }
 
-main.uhc4510 {
+main.uhc4 {
+  height: 30vh;
+  width: 100vw;
+  background-color: var(--dark);
+  color: var(--light);
+  text-align: center;
+}
+
+main.uhc5 {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -109,22 +119,23 @@ main.uhc4510 {
   align-items: center;
 }
 
-div.uhc4510 {
+section.uhc5 {
   width: 40vw;
   height: 60vh;
   border: 1px solid var(--dark);
 }
 
-.left.uhc4510 {
-  width: 50vw;
+.left.uhc5 {
   width: 50vw;
   position: relative;
   top: 0;
   left: 10vw;
+  padding-right: 20vw;
+  padding-left: 20px;
   border-width: 5px;
 }
 
-.right.uhc4510 {
+.right.uhc5 {
   height: 50vh;
   position: relative;
   top: 0;
@@ -132,18 +143,19 @@ div.uhc4510 {
 }
 
 @media screen and (max-width: 680px) {
-  .right.uhc4510 {
+  .right.uhc5 {
     display: none;
   }
 
-  .left.uhc4510 {
+  .left.uhc5 {
     width: 90vw;
     position: relative;
     top: 0;
     left: 0;
+    padding-right: 0px;
   }
 }
-main.uhc4511 {
+main.uhc6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -154,30 +166,33 @@ main.uhc4511 {
   color: var(--light);
 }
 
-section.uhc4511 {
+marquee.uhc6 {
   height: 250px;
   width: 80vw;
-  overflow: auto;
-  white-space: nowrap;
-  overflow-y: scroll;
 }
 
-div.uhc4511 {
+div.uhc6 {
   display: inline-block;
   text-align: center;
 }
 
-img.uhc4511 {
+img.uhc6 {
   width: 250px;
   aspect-ratio: 3/2;
   border-radius: 10px;
 }
 
-.link.uhc4511 {
+.link.uhc6 {
   color: var(--light);
 }
 
-main.uhc4512 {
+main.uhc7 {
+  height: 45vh;
+  width: 100vw;
+  text-align: center;
+}
+
+main.uhc8 {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -186,7 +201,7 @@ main.uhc4512 {
   align-items: center;
 }
 
-section.uhc4512 {
+section.uhc8 {
   display: flex;
   flex-direction: row;
   max-width: 800px;
@@ -196,7 +211,7 @@ section.uhc4512 {
 }
 
 textarea,
-input.uhc4512 {
+input.uhc8 {
   width: 80%;
   border: none;
   border-bottom: 1px solid var(--dark);
@@ -206,17 +221,17 @@ input.uhc4512 {
   font-family: "Montserrat", sans-serif;
 }
 
-textarea.uhc4512 {
+textarea.uhc8 {
   height: 40%;
   border: 1px solid var(--dark);
   font-size: 13px;
 }
 
-button.uhc4512 {
+button.uhc8 {
   width: 40%;
 }
 
-.left.uhc4512 {
+.left.uhc8 {
   color: var(--light);
   width: 30vw;
   height: 90vh;
@@ -224,7 +239,7 @@ button.uhc4512 {
   padding-left: 3vw;
 }
 
-.right.uhc4512 {
+.right.uhc8 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -235,20 +250,20 @@ button.uhc4512 {
 }
 
 @media screen and (max-width: 680px) {
-  main.uhc4512 {
+  main.uhc8 {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
 
-  section.uhc4512 {
+  section.uhc8 {
     height: 130vh;
     width: 100vw;
     flex-direction: column;
     border: none;
   }
 
-  .left.uhc4512 {
+  .left.uhc8 {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -257,14 +272,14 @@ button.uhc4512 {
     padding: 0px;
   }
 
-  .right.uhc4512 {
+  .right.uhc8 {
     align-items: center;
     padding: 0px;
     width: 100vw;
     text-align: center;
   }
 }
-main.uhc4513 {
+main.uhc9 {
   height: 70px;
   width: 100vw;
   padding-top: 10px;
@@ -273,11 +288,11 @@ main.uhc4513 {
   text-align: center;
 }
 
-a.uhc4513 {
+a.uhc9 {
   color: var(--light);
 }
 
-main.uhc4507 {
+main.uhc1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -295,118 +310,175 @@ main.uhc4507 {
 
 
 
-<button onclick="showMenu()" class="uhc4508">
-  <i  class="uhc4508 material-icons-outlined"> menu </i>
+<button onclick="showMenu()" class="uhc2">
+  <i  class="uhc2 material-icons-outlined"> menu </i>
 </button>
-<main class="uhc4508">
-  <img src="name.jpeg" alt="company logo"  class="uhc4508"/>
-  <div id="nav" class="uhc4508">
-    <a onclick="hideMenu()"  class="uhc4508 hover" href="#home">Home</a>
-    <a onclick="hideMenu()"  class="uhc4508 hover" href="#about">About</a>
-    <a onclick="hideMenu()"  class="uhc4508 hover" href="#products">Products</a>
-    <a onclick="hideMenu()"  class="uhc4508 hover" href="#contact">Contact</a>
+<main class="uhc2">
+  <img src="name.jpeg" alt="company logo"  class="uhc2"/>
+  <div id="nav" class="uhc2">
+    <a onclick="hideMenu()"  class="uhc2 hover" href="#home">Home</a>
+    <a onclick="hideMenu()"  class="uhc2 hover" href="#about">About</a>
+    <a onclick="hideMenu()"  class="uhc2 hover" href="#products">Products</a>
+    <a onclick="hideMenu()"  class="uhc2 hover" href="#contact">Contact</a>
   </div>
 </main>
 
-<script defer class="uhc4508">
+<script defer class="uhc2">
   const nav = document.querySelector("#nav");
   const icon = document.querySelector("i");
 
   function showMenu() {
     nav.classList.add("open");
-    icon.style.display = "none";
   }
   function hideMenu() {
     nav.classList.remove("open");
-    icon.style.display = "flex";
   }
 </script>
 
-<main class="uhc4507">
+<main class="uhc1">
   
 
-<main id="home" class="uhc4509">
-  <div class="uhc4509">
-    <h1 class="uhc4509">Hooghly Agro Products</h1>
-    <h3 class="uhc4509">Pvt. Ltd.</h3>
+<main id="home" class="uhc3">
+  <div class="uhc3">
+    <h1 class="uhc3">Hooghly Agro Products</h1>
+    <h3 class="uhc3">Pvt. Ltd.</h3>
   </div>
 </main>
 
   
 
-<main id="about" class="uhc4510">
-  <div  class="uhc4510 left"></div>
-  <div  class="uhc4510 right"></div>
-</main>
-
-  
-
-<main id="products" class="uhc4511">
-  <h1 class="uhc4511">Our Products</h1>
-  <section class="uhc4511">
-    <div class="uhc4511">
-      <h3 class="uhc4511">Rice Bran Oil</h3>
-      <img src="./product4.jpg" alt="product image"  class="uhc4511"/>
-    </div>
-    <div class="uhc4511">
-      <h3 class="uhc4511">Crude Rice Bran Oil</h3>
-      <img src="./product6.jpg" alt="product image"  class="uhc4511"/>
-    </div>
-    <div class="uhc4511">
-      <h3 class="uhc4511">De Oiled Rice Bran</h3>
-      <img src="./product2.png" alt="product image"  class="uhc4511"/>
-    </div>
-    <div class="uhc4511">
-      <h3 class="uhc4511">Rice Bran</h3>
-      <img src="./product3.jpg" alt="product image"  class="uhc4511"/>
-    </div>
-    <div class="uhc4511">
-      <h3 class="uhc4511">De Oiled Rice Bran</h3>
-      <img src="./product5.jpg" alt="product image"  class="uhc4511"/>
-    </div>
-  </section>
-  <p>
-    Interested?
-    <a  class="uhc4511 link" href="#">let us know!</a>
+<main class="uhc4">
+  <h1 class="uhc4">Our Mission</h1>
+  <p class="uhc4">
+    The company's mission is to develop the production process for maintaining
+    quality of crude rice bran oil and de-Oiled rice bran to satisfy both
+    domestic and international customers.
   </p>
 </main>
 
   
 
-<main id="contact" class="uhc4512">
-  <section class="uhc4512">
-    <div  class="uhc4512 left">
-      <h2 class="uhc4512">
-        Pay us,<br  class="uhc4512"/>
+<main id="about" class="uhc5">
+  <section  class="uhc5 left">
+    <h1 class="uhc5">About Us</h1>
+    <marquee
+      behavior="scroll"
+      direction="up"
+      height="250"
+      scrollamount="2"
+      scrolldelay="10"
+      onmouseover="this.stop()"
+      onmouseout="this.start()"
+     class="uhc5">
+      <p class="uhc5">
+        Hooghly Agro Products Pvt. Ltd. is the manufacturer of the crude rice
+        bran oil and de-oiled rice bran. The company was founded in 2011.
+      </p>
+      <p class="uhc5">
+        Our attention has been paid to continuosly production technology
+        development and quality control. Our every process of production of
+        crude rice bran oil and de-Oiled rice bran is closely supervised and
+        manufacture by the specialist.
+      </p>
+      <p class="uhc5">
+        Now Hooghly Agro Products Pvt. Ltd. has a huge annual capacity of
+        processing rice bran for making the best quality of crude rice bran oil
+        and de-Oiled rice bran.
+      </p>
+    </marquee>
+  </section>
+  <img src="./bottle.png"  class="uhc5 right" alt="oil bottle" />
+</main>
+
+  
+
+<main id="products" class="uhc6">
+  <h1 class="uhc6">Our Products</h1>
+  <marquee
+    behavior="scroll"
+    direction="left"
+    height="250"
+    scrollamount="6"
+    scrolldelay="10"
+    onmouseover="this.stop()"
+    onmouseout="this.start()"
+   class="uhc6">
+    <div class="uhc6">
+      <h3 class="uhc6">Rice Bran Oil</h3>
+      <img src="./product4.jpg" alt="product image"  class="uhc6"/>
+    </div>
+    <div class="uhc6">
+      <h3 class="uhc6">Crude Rice Bran Oil</h3>
+      <img src="./product6.jpg" alt="product image"  class="uhc6"/>
+    </div>
+    <div class="uhc6">
+      <h3 class="uhc6">De Oiled Rice Bran</h3>
+      <img src="./product2.png" alt="product image"  class="uhc6"/>
+    </div>
+    <div class="uhc6">
+      <h3 class="uhc6">Rice Bran</h3>
+      <img src="./product3.jpg" alt="product image"  class="uhc6"/>
+    </div>
+    <div class="uhc6">
+      <h3 class="uhc6">De Oiled Rice Bran</h3>
+      <img src="./product5.jpg" alt="product image"  class="uhc6"/>
+    </div>
+  </marquee>
+  <p>
+    Interested?
+    <a  class="uhc6 link" href="#">let us know!</a>
+  </p>
+</main>
+
+  
+
+<main class="uhc7">
+  <h1 class="uhc7">Why Choose Us?</h1>
+  <div class="uhc7">
+    <p class="uhc7">1. Ethical business policies & transparent tarde deals.</p>
+    <p class="uhc7">2. Superior quality Agro products.</p>
+    <p class="uhc7">3. Sound infrastructure & spacious warehouse.</p>
+    <p class="uhc7">4. Qualified and experienced workforce.</p>
+    <p class="uhc7">5. Wide distribution network & timely delivery</p>
+  </div>
+</main>
+
+  
+
+<main id="contact" class="uhc8">
+  <section class="uhc8">
+    <div  class="uhc8 left">
+      <h2 class="uhc8">
+        Pay us,<br  class="uhc8"/>
         a visit!
       </h2>
       <p>
-        Beraberi, Hooghly,<br  class="uhc4512"/>
+        Dedhara, Hooghly,<br  class="uhc8"/>
         West Bengal
       </p>
-      <h2 class="uhc4512">
-        Wanna Talk?, <br  class="uhc4512"/>
+      <h2 class="uhc8">
+        Wanna Talk?, <br  class="uhc8"/>
         give us a call!
       </h2>
-      <p class="uhc4512">9734485347, 9434025940</p>
+      <p class="uhc8">9734485347, 9434025940</p>
     </div>
-    <div  class="uhc4512 right">
-      <h2 class="uhc4512">Get in touch</h2>
-      <input type="text" placeholder="Brad pit"  class="uhc4512"/>
-      <input type="text" placeholder="Exmaple@mail.com"  class="uhc4512"/>
-      <input type="text" placeholder="Subject"  class="uhc4512"/>
-      <textarea cols="30" rows="10" placeholder="your message" class="uhc4512"></textarea>
-      <button  class="uhc4512 hover" type="submit">Send Email</button>
+    <div  class="uhc8 right">
+      <h2 class="uhc8">Get in touch</h2>
+      <input type="text" placeholder="Brad pit"  class="uhc8"/>
+      <input type="text" placeholder="Exmaple@mail.com"  class="uhc8"/>
+      <input type="text" placeholder="Subject"  class="uhc8"/>
+      <textarea cols="30" rows="10" placeholder="your message" class="uhc8"></textarea>
+      <button  class="uhc8 hover" type="submit">Send Email</button>
     </div>
   </section>
 </main>
 
   
 
-<main class="uhc4513">
-  © Hooghly Agro Products Pvt. Ltd <br  class="uhc4513"/>
-  <a href="" class="uhc4513">report issue</a> | <a href="" class="uhc4513">mail us</a> |
-  <a href="" class="uhc4513">source code</a>
+<main class="uhc9">
+  © Hooghly Agro Products Pvt. Ltd <br  class="uhc9"/>
+  <a href="" class="uhc9">report issue</a> | <a href="" class="uhc9">mail us</a> |
+  <a href="" class="uhc9">source code</a>
 </main>
 
 </main>

@@ -37,14 +37,6 @@
     z-index: 2;
     transition: all 1s;
   }
-  @media screen and (max-width: $mobile) {
-    div {
-      display: none;
-    }
-    i {
-      display: block;
-    }
-  }
   button:hover {
     i {
       color: $light;
@@ -70,6 +62,14 @@
     background-color: $light;
     z-index: 3;
   }
+  @media screen and (max-width: $mobile) {
+    div {
+      display: none;
+    }
+    i {
+      display: block;
+    }
+  }
 </style>
 
 <button onclick="showMenu()">
@@ -91,10 +91,8 @@
 
   function showMenu() {
     nav.classList.add("open");
-    icon.style.display = "none";
   }
   function hideMenu() {
     nav.classList.remove("open");
-    icon.style.display = "flex";
   }
 </script>

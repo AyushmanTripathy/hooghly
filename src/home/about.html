@@ -7,34 +7,64 @@
   $width: 40vw;
   $height: 60vh;
   $left: 10vw;
-  div {
+
+  section {
     width: $width;
     height: $height;
     border: 1px solid $dark;
   }
   .left {
-    width: calc( $width + 10vw );
-    width: calc( $width + 10vw );
+    width: calc($width + 10vw);
     @include relative(0, $left);
-    border-width:5px;
+
+    padding-right: calc($left * 2);
+    padding-left: 20px;
+    border-width: 5px;
   }
   .right {
-    height: calc( $height - 10vh );
+    height: calc($height - 10vh);
     @include relative(0, -$left);
   }
-
   @media screen and (max-width: $mobile) {
     .right {
       display: none;
     }
     .left {
       width: 90vw;
-      @include relative(0,0);
+      @include relative(0, 0);
+      padding-right: 0px;
     }
   }
 </style>
 
 <main id="about">
-  <div class="left"></div>
-  <div class="right"></div>
+  <section class="left">
+    <h1>About Us</h1>
+    <marquee
+      behavior="scroll"
+      direction="up"
+      height="250"
+      scrollamount="2"
+      scrolldelay="10"
+      onmouseover="this.stop()"
+      onmouseout="this.start()"
+    >
+      <p>
+        Hooghly Agro Products Pvt. Ltd. is the manufacturer of the crude rice
+        bran oil and de-oiled rice bran. The company was founded in 2011.
+      </p>
+      <p>
+        Our attention has been paid to continuosly production technology
+        development and quality control. Our every process of production of
+        crude rice bran oil and de-Oiled rice bran is closely supervised and
+        manufacture by the specialist.
+      </p>
+      <p>
+        Now Hooghly Agro Products Pvt. Ltd. has a huge annual capacity of
+        processing rice bran for making the best quality of crude rice bran oil
+        and de-Oiled rice bran.
+      </p>
+    </marquee>
+  </section>
+  <img src="./bottle.png" class="right" alt="oil bottle" />
 </main>
