@@ -1,14 +1,14 @@
 {
+  "uhc": "1.5.0",
   "src_dir": "src",
   "build_dir": "public",
   "template": "template.html",
   "css": {
     "autoprefix": true,
     "prefix": "@import \"../mixins.scss\";",
-    "sass": true 
+    "sass": true
   },
-  "vars": {
-  },
+  "vars": {},
   "routes": {
     "/": "home/index.html"
   }

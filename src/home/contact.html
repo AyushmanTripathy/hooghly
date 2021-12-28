@@ -94,13 +94,18 @@
       </h2>
       <p>9734485347, 9434025940</p>
     </div>
-    <div class="right">
+    <form class="right" name="responsive" action="POST" data-netlify="true">
       <h2>Get in touch</h2>
-      <input type="text" placeholder="Brad pit" />
-      <input type="text" placeholder="Exmaple@mail.com" />
-      <input type="text" placeholder="Subject" />
-      <textarea cols="30" rows="10" placeholder="your message"></textarea>
-      <button class="hover" type="submit">Send Email</button>
-    </div>
+      <input name="name" type="text" placeholder="Brad pit" />
+      <input name="mail" type="text" placeholder="Exmaple@mail.com" />
+      <input name="subject" type="text" placeholder="Subject" />
+      <textarea
+        name="message"
+        cols="30"
+        rows="10"
+        placeholder="your message"
+      ></textarea>
+      <input class="hover" type="submit" value="Send Email" />
+    </form>
   </section>
 </main>
